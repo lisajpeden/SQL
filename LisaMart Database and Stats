@@ -1,0 +1,23 @@
+CREATE TABLE LisaMart (id INTEGER PRIMARY KEY, name TEXT, quanitity INTEGER, department TEXT, temp TEXT, price NUMERIC);
+
+INSERT INTO LisaMart VALUES (698, "Bananas", 12, "Produce", "shelf", .99);
+INSERT INTO LisaMart VALUES (699, "Apples", 6, "Produce", "shelf", 1.79);
+INSERT INTO LisaMart VALUES (243, "Trident Gum", 20, "Checkout", "shelf", 3.99);
+INSERT INTO LisaMart VALUES (244, "Cinnamon Gum", 20, "Checkout", "shelf", 2.99);
+INSERT INTO LisaMart VALUES (245, "Watermelon Vibe Gum", 20, "Checkout", "shelf", 3.24);
+INSERT INTO LisaMart VALUES (181, "ICEE blue raspberry", 30, "On-demand Drinks", "refrigerator", 2.99);
+INSERT INTO LisaMart VALUES (182, "ICEE strawberry", 30, "On-demand Drinks", "refrigerator", 2.99);
+INSERT INTO LisaMart VALUES (183, "ICEE orange crush", 30, "On-demand Drinks", "refrigerator", 2.99);
+INSERT INTO LisaMart VALUES (642, "Pocket Lighter", 10, "Checkout", "shelf", 1.50);
+INSERT INTO LisaMart VALUES (522, "Bunny's Chocolate Ice Cream", 5, "Ice Cream", "freezer", 4.59);
+INSERT INTO LisaMart VALUES (523, "Bunny's Vanilla Bean Ice Cream", 5, "Ice Cream", "freezer", 4.59);INSERT INTO LisaMart VALUES (524, "Bunny's Praline Ice Cream", 5, "Ice Cream", "freezer", 4.59);
+INSERT INTO LisaMart VALUES (525, "Bunny's Strawberry Ice Cream", 5, "Ice Cream", "freezer", 4.59);
+INSERT INTO LisaMart VALUES (777, "GalPal Magazine", 7, "Checkout", "shelf", 5.99);
+INSERT INTO LisaMart VALUES (778, "They/Them Freedom Magazine", 2, "Checkout", "shelf", 5.99);
+INSERT INTO LisaMart VALUES (901, "Lay's Potato Chips", 10, "Chips&Crackers", "shelf", 2.39);
+
+SELECT * FROM LisaMart ORDER BY price ASC;
+
+SELECT ROUND(AVG(price), 2) AS "Average Price" FROM LisaMart;
+
+SELECT * FROM LisaMart WHERE department = "Freezer" AND quanitity >= 5 ORDER BY quanitity ASC;
