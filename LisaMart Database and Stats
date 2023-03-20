@@ -20,4 +20,6 @@ SELECT * FROM LisaMart ORDER BY price ASC;
 
 SELECT ROUND(AVG(price), 2) AS "Average Price" FROM LisaMart;
 
+SELECT MAX(price) from LisaMart;
+
 SELECT * FROM LisaMart WHERE department = "Freezer" AND quanitity >= 5 ORDER BY quanitity ASC;
